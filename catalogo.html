@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Moveis e Interiores | Sua Loja de Móveis</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="stylecat.css">
+</head>
+<body>
+
+    <a href="https://wa.me/55062981111011" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="favicon.ico" alt="Logo" width="45" class="me-2"> 
+                FC Móveis E Interiores
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobrenos">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link btn-whatsapp ms-lg-3" href="https://wa.me/55062981111011" target="_blank">Falar com Consultor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="catalogo" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Nosso Catálogo Profissional</h2>
+
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto text-center">
+                    <input type="text" id="search-input" class="form-control" placeholder="🔍 Busque por nome do móvel (ex: Sofá)...">
+                </div>
+            </div>
+
+            <div class="filter-button-group text-center mb-5">
+                <button class="btn active" data-filter="*">Todos</button>
+                <button class="btn" data-filter=".moveis">Móveis</button>
+                <button class="btn" data-filter=".tintas">Tintas</button>
+                <button class="btn" data-filter=".promo">Promoções %</button>
+            </div>
+          
+            <div class="row grid">
+          
+                <div class="col-md-4 mb-4 grid-item moveis">
+                    <div class="card card-movel">
+                        <a data-fancybox="galeria-sofa" href="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200" data-caption="Sofá Retrátil Velvet">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600" class="card-img-top" alt="Sofá">
+                        </a>
+                        <div class="card-body">
+                            <span class="categoria-badge">Móveis / Sala</span>
+                            <h5 class="card-title fw-bold mt-2">Sofá Retrátil Velvet</h5>
+                            <p class="card-text text-muted">Estrutura em madeira de reflorestamento tratada. Assento retrátil com molas ensacadas e espuma D28. Tecido velvet com toque macio.</p>
+                            <div class="extra-photos d-flex gap-2 mb-3">
+                                <a data-fancybox="galeria-sofa" href="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1200"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=150" class="img-thumbnail"></a>
+                            </div>
+                            <button onclick="enviarInteresse('Sofá Retrátil Velvet')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 grid-item moveis">
+                    <div class="card card-movel">
+                        <a data-fancybox="galeria-mesa" href="https://images.unsplash.com/photo-1577146333195-66049ac1164a?w=1200">
+                            <img src="https://images.unsplash.com/photo-1577146333195-66049ac1164a?w=600" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <span class="categoria-badge">Móveis / Jantar</span>
+                            <h5 class="card-title fw-bold mt-2">Mesa de Jantar Orgânica</h5>
+                            <p class="card-text text-muted">Mesa com tampo em MDF de alta densidade e pés em madeira maciça. Acabamento em verniz acetinado fosco. Ideal para 6 lugares.</p>
+                            <div class="extra-photos d-flex gap-2 mb-3">
+                                <a data-fancybox="galeria-mesa" href="https://images.unsplash.com/photo-1617806118233-f8e137453f9c?w=1200"><img src="https://images.unsplash.com/photo-1617806118233-f8e137453f9c?w=150" class="img-thumbnail"></a>
+                            </div>
+                            <button onclick="enviarInteresse('Mesa Jantar Orgânica')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4 mb-4 grid-item moveis">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-1" href="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=1200">
+                                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Madeira Maciça</span>
+                                <h5 class="card-title fw-bold mt-2">Mesa de Jantar Rústica</h5>
+                                <p class="card-text text-muted">Feita em madeira de demolição com acabamento em cera natural. Comporta até 8 pessoas com extrema robustez.</p>
+                                <button onclick="enviarInteresse('Mesa Rústica')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4 mb-4 grid-item moveis">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-2" href="https://images.unsplash.com/photo-1538688543467-f9d973ef56d2?w=1200">
+                                <img src="https://images.unsplash.com/photo-1538688543467-f9d973ef56d2?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Madeira Maciça</span>
+                                <h5 class="card-title fw-bold mt-2">Aparador Colonial</h5>
+                                <p class="card-text text-muted">Ideal para halls de entrada. Madeira de Cedro com entalhes manuais e acabamento em verniz alto brilho.</p>
+                                <button onclick="enviarInteresse('Aparador Colonial')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 grid-item moveis">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-sofa" href="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200" data-caption="Sofá Retrátil Velvet">
+                                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600" class="card-img-top" alt="Sofá">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Móveis / Sala</span>
+                                <h5 class="card-title fw-bold mt-2">Sofá Retrátil Velvet</h5>
+                                <p class="card-text text-muted">Estrutura em madeira de reflorestamento tratada. Assento retrátil com molas ensacadas e espuma D28. Tecido velvet com toque macio.</p>
+                                <div class="extra-photos d-flex gap-2 mb-3">
+                                    <a data-fancybox="galeria-sofa" href="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1200"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=150" class="img-thumbnail"></a>
+                                </div>
+                                <button onclick="enviarInteresse('Sofá Retrátil Velvet')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item moveis">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-mesa" href="https://images.unsplash.com/photo-1577146333195-66049ac1164a?w=1200">
+                                <img src="https://images.unsplash.com/photo-1577146333195-66049ac1164a?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Móveis / Jantar</span>
+                                <h5 class="card-title fw-bold mt-2">Mesa de Jantar Orgânica</h5>
+                                <p class="card-text text-muted">Mesa com tampo em MDF de alta densidade e pés em madeira maciça. Acabamento em verniz acetinado fosco. Ideal para 6 lugares.</p>
+                                <div class="extra-photos d-flex gap-2 mb-3">
+                                    <a data-fancybox="galeria-mesa" href="https://images.unsplash.com/photo-1617806118233-f8e137453f9c?w=1200"><img src="https://images.unsplash.com/photo-1617806118233-f8e137453f9c?w=150" class="img-thumbnail"></a>
+                                </div>
+                                <button onclick="enviarInteresse('Mesa Jantar Orgânica')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item moveis">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-cama" href="https://images.unsplash.com/photo-1505693419173-42b9258a6300?w=1200">
+                                <img src="https://images.unsplash.com/photo-1505693419173-42b9258a6300?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Móveis / Quarto</span>
+                                <h5 class="card-title fw-bold mt-2">Cama Box Casal Premium</h5>
+                                <p class="card-text text-muted">Cama box com baú interno reforçado. Revestimento lateral em corino chocolate. Pistões pneumáticos de alta durabilidade.</p>
+                                <button onclick="enviarInteresse('Cama Box Premium')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item moveis promo">
+                        <div class="card card-movel">
+                            <span class="promo-badge">OFERTA</span>
+                            <a data-fancybox="galeria-rack" href="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=1200">
+                                <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Móveis / Sala</span>
+                                <h5 class="card-title fw-bold mt-2">Rack Ripado Moderno</h5>
+                                <p class="card-text text-muted">Painel ripado com LED embutido e nichos organizadores. Acabamento off-white brilho com detalhes em madeira amadeirada.</p>
+                                <button onclick="enviarInteresse('Rack Ripado Moderno')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item moveis">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-poltrona" href="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Móveis / Decoração</span>
+                                <h5 class="card-title fw-bold mt-2">Poltrona Decorativa</h5>
+                                <p class="card-text text-muted">Pés palito em madeira maciça clara. Espuma D26 com design anatômico. Ideal para salas de espera e quartos.</p>
+                                <button onclick="enviarInteresse('Poltrona Decorativa')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item tintas">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-verniz" href="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200">
+                                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Tintas / Acabamento</span>
+                                <h5 class="card-title fw-bold mt-2">Verniz Marítimo Premium</h5>
+                                <p class="card-text text-muted">Proteção UV para madeiras expostas ao sol e chuva. Acabamento brilhante ou fosco. Alta resistência e durabilidade.</p>
+                                <button onclick="enviarInteresse('Verniz Maritimo')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item tintas promo">
+                        <div class="card card-movel">
+                            <span class="promo-badge">PROMOÇÃO</span>
+                            <a data-fancybox="galeria-tinta" href="https://images.unsplash.com/photo-1562700850-81461168a440?w=1200">
+                                <img src="https://images.unsplash.com/photo-1562700850-81461168a440?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Tintas / Parede</span>
+                                <h5 class="card-title fw-bold mt-2">Tinta Acrílica Premium</h5>
+                                <p class="card-text text-muted">Lata de 18L com alto rendimento e excelente cobertura. Lavável e sem cheiro após 3 horas da aplicação.</p>
+                                <button onclick="enviarInteresse('Tinta Acrilica')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item tintas">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-seladora" href="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=1200">
+                                <img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Tintas / Preparação</span>
+                                <h5 class="card-title fw-bold mt-2">Seladora Extra Madeira</h5>
+                                <p class="card-text text-muted">Fecha os poros da madeira facilitando o acabamento. Ideal para móveis de demolição ou fabricação nova.</p>
+                                <button onclick="enviarInteresse('Seladora Madeira')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item tintas">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-stain" href="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=1200">
+                                <img src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Tintas / Exterior</span>
+                                <h5 class="card-title fw-bold mt-2">Stain Hidrorepelente</h5>
+                                <p class="card-text text-muted">Impregnante que realça os veios da madeira sem criar película. Protege contra fungos e intempéries.</p>
+                                <button onclick="enviarInteresse('Stain Protetor')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4 grid-item tintas">
+                        <div class="card card-movel">
+                            <a data-fancybox="galeria-kit" href="https://images.unsplash.com/photo-1565193298357-bb0350798993?w=1200">
+                                <img src="https://images.unsplash.com/photo-1565193298357-bb0350798993?w=600" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <span class="categoria-badge">Tintas / Acessórios</span>
+                                <h5 class="card-title fw-bold mt-2">Kit Pintura Master</h5>
+                                <p class="card-text text-muted">Contém rolo de lã de carneiro, bandeja, trinchas cerdas pretas e fita crepe profissional para isolamento.</p>
+                                <button onclick="enviarInteresse('Kit Pintura Master')" class="btn btn-dark w-100">Consultar WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <h4 class="fw-bold mb-4">FC Móveis E Interiores</h4>
+            <p>Rua Canoeiros, qd 38 - lt 27 - Jardim Guanabara, Goiânia - GO, 74675-170</p>
+            <p>
+                <a href="https://www.instagram.com/fc_moveis.interiores" target="_blank" style="color: white; text-decoration: none;">
+                    <i class="fab fa-instagram"></i> @fc_moveis.interiores
+                </a>
+            </p>
+            <hr class="bg-secondary my-4">
+            <p class="small text-secondary">© 2026 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="scriptcat.js"></script>
+</body>
+</html>
